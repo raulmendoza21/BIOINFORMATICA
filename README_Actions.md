@@ -76,7 +76,7 @@ jobs:
         with:
           path: site
 
-      # Despliega en GitHub Pages
+      # Despliega en GitHub Page
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
 ```
