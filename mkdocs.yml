@@ -1,4 +1,8 @@
 site_name: Entrega de Prácticas
+site_description: Documentación de las prácticas de Administración de Sistemas Operativos
+site_author: Raúl Mendoza
+site_url: https://raulmendoza21.github.io/BIOINFORMATICA/
+
 nav:
   - Inicio: index.md
   - Práctica 1: practica1.md
@@ -6,5 +10,54 @@ nav:
   - Práctica 3: practica3.md
   - Práctica 4: practica4.md
   - Práctica 5: practica5.md
+
 theme:
-  name: mkdocs
+  name: material
+  language: es
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Modo oscuro
+    - scheme: slate
+      primary: indigo
+      accent: lime
+      toggle:
+        icon: material/weather-sunny
+        name: Modo claro
+  features:
+    - navigation.instant
+    - navigation.expand
+    - navigation.tabs
+    - toc.integrate
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.action.edit
+  icon:
+    repo: fontawesome/brands/github
+
+repo_url: https://github.com/raulmendoza21/BIOINFORMATICA
+repo_name: BIOINFORMATICA
+edit_uri: edit/main/docs/
+
+plugins:
+  - search
+  - tags
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - footnotes
+  - meta
+  - toc:
+      permalink: true
+  - def_list
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
